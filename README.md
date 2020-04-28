@@ -1,4 +1,4 @@
-# Animal-Crossing-API-ScraperAPI-Scraper
+# Animal-Crossing-API-Scraper
 This project is built to extract jsons and images for fish & bugs from animal crossing API, and upload to Cloud Service or send to emails automatically. 
 
 
