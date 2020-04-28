@@ -1,5 +1,5 @@
 # Animal-Crossing-API-Scraper
-This project is built to extract jsons and images for fish & bugs from animal crossing API, and upload to Cloud Service or send to emails automatically. 
+This project is built to extract jsons and images for fish & bugs from animal crossing API, and upload to Cloud Service or send emails automatically. 
 
 
 ### Support Service
@@ -12,7 +12,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 ```text
 .
 ├── ACNH_API                   # Project files for ANCH API
-│   ├── cloud_verification.py  # self-defined module
+│   ├── cloud_verification     # self-defined module
 │   ├── api_extractor          # spider for ACNH API
 │   ├── google_drive_uploader  # upload all files to Google Drive automatically
 │   └── api_sample.json        # animal crossing api call sample
@@ -24,7 +24,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 
 ### Setup
-1. Clone this whole project
+1. Clone the whole project
 ```shell script
 $ git clone https://github.com/DANancy/API-Scraper-Starter.git
 ```
