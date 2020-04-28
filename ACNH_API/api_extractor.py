@@ -10,7 +10,7 @@ from PIL import Image
 
 def api_cal(url):
     result = None
-    for i in range(0, 10):  # define retry times
+    for i in range(0, 3):  # define retry times
         ok = False
         while True:
             try:
