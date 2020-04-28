@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDE
+.idea
+
+# test
+ACNH_API/data
+
+# Google Grive API
+ACNH_API/client_secrets.json
+ACNH_API/mycreds.txt
