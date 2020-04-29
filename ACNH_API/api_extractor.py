@@ -76,7 +76,7 @@ def get_images(urlst, folder_path):
 
                         image_name = "{}/{}.png".format(output_dir, id)
                         image = Image.open(io.BytesIO(result.content))
-                        image.save(image_name)
+                        image.save(image_name,optimize=True,quality=80)
                         print("{} created.".format(image_name))
                     count += 1
                 print("{} Images Created".format(count))
