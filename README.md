@@ -40,7 +40,7 @@ print(pandas.__file__)
 3. Setup Cloud Server/SMTP Server
 * [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
 * Amzon S3
-* SMTP Server
+* [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)
 
 4.Run API Extractor
 ```shell script
@@ -55,7 +55,7 @@ $ python ACNH_API/google_drive_uploader.py
 
 ### References
 * [PyDrive](https://gsuitedevs.github.io/PyDrive/docs/build/html/index.html)
-
+* [Flask-Mail](https://pythonhosted.org/Flask-Mail/)
 
 ### Credits
 * [Mutoo](https://github.com/mutoo) - Wash dishes and take care of baby while I am programming :D
