@@ -15,7 +15,9 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 │   ├── cloud_verification     # self-defined module
 │   ├── api_extractor          # spider for ACNH API
 │   ├── google_drive_uploader  # upload all files to Google Drive automatically
+│   ├── emails_distributor     # zip all files and distribute emails automatically
 │   └── api_sample.json        # animal crossing api call sample
+├── Images
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt

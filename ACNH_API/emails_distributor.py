@@ -42,17 +42,19 @@ def distributor(folder):
     }
 
     app.config.update(mail_settings)
+
     mail = Mail(app)
     with app.app_context():
+        # setup basic info, write complex html to customize if you want
         msg = Message(subject= "This is info from ACNH API Call",
                      body = "This is awesome",
-                     html=""" <img src="animal_crossing.png" width="800" height="600" />""",
+                     html=""" <img src="https://github.com/DANancy/Animal-Crossing-API-Scraper/blob/master/Images/animal-crossing.jpg" width="800" height="600" />""",
                      sender=app.config.get("MAIL_USERNAME"),
                      recipients=json.loads(os.getenv("Recipients")))
 
+        # add attachment to the email
         with app.open_resource(folder) as fp:
             msg.attach(folder, "folder/zip", fp.read())
-
         mail.send(msg)
 
 if __name__ == "__main__":
