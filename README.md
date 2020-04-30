@@ -8,7 +8,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 * SMTP Server
 
 ### ACNH API Scraper Architecture
-![Image of Diagram](images/API_Scraper_diagram.png)
+![Image of Diagram](images/API_Scraper_Diagram.png)
 
 
 ### Project Overview
