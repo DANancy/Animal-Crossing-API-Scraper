@@ -48,7 +48,7 @@ def distributor(local_folder):
         # setup basic info, write complex html to customize if you want
         msg = Message(subject= "This is info from ACNH API Call",
                      body = "This is awesome",
-                     html=""" <img src="https://github.com/DANancy/Animal-Crossing-API-Scraper/blob/master/Images/animal-crossing.jpg" width="800" height="600" />""",
+                     html=""" <img src="https://github.com/DANancy/Animal-Crossing-API-Scraper/blob/master/images/animal-crossing.jpg" width="800" height="600" />""",
                      sender=app.config.get("MAIL_USERNAME"),
                      recipients=json.loads(os.getenv("Recipients")))
 

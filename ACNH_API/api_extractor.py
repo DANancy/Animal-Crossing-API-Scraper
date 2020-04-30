@@ -79,7 +79,7 @@ def get_images(urlst, folder_path):
                         image.save(image_name,optimize=True,quality=80)
                         print("{} created.".format(image_name))
                     count += 1
-                print("{} Images Created".format(count))
+                print("{} images Created".format(count))
 
 if __name__ == "__main__":
     info_lst = ['http://acnhapi.com/fish',
