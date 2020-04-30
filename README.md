@@ -62,18 +62,18 @@ AWS_DEFAULT_REGION=ap-southeast-2
 LocalFolder=data
 AWSBucket=data
 ```
-
-4.Setup Cloud Server/SMTP Server
-* [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
-* [Get Amazon Access Key](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
-* [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)
-
 4.Run API Extractor
 ```shell script
 $ python ACNH_API/api_extractor.py
 ```
 
-5.Run Uploader based on your needs
+5.Setup Cloud Server/SMTP Server
+* [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
+* [Get Amazon Access Key](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
+* [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)
+
+
+6.Run Uploader based on your needs
 ```shell script
 $ python ACNH_API/google_drive_uploader.py
 ```
