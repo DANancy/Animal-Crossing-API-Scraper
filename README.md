@@ -9,7 +9,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 
 ### ACNH API Scraper Architecture
-![Image of Diagram](images/API_Scraper_Diagram.png)
+![Image of Diagram](<img src="https://github.com/DANancy/Animal-Crossing-API-Scraper/blob/master/images/API_Scraper_Diagram.png" height="600" width="400">)
 
 
 ### Project Overview
@@ -34,7 +34,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 ### Setup
 1.Clone the whole project
 ```shell script
-$ git clone https://github.com/DANancy/API-Scraper-Starter.git
+$ git clone https://github.com/DANancy/Animal-Crossing-API-Scraper.git
 ```
 
 
