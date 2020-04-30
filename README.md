@@ -9,7 +9,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 
 ### ACNH API Scraper Architecture
-![Image of Diagram](<img src="images/API_Scraper_Diagram.png" height="600" width="400">)
+<img src="images/API_Scraper_Diagram.png" height="600" width="400">
 
 
 ### Project Overview
