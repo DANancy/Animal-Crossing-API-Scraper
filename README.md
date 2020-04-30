@@ -36,7 +36,18 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 $ git clone https://github.com/DANancy/API-Scraper-Starter.git
 ```
 
-2.Add Self-Defined Module -> cloud_verification.py (only for Google)
+2.Run API Extractor
+```shell script
+$ python ACNH_API/api_extractor.py
+```
+
+3.Setup Cloud Server/SMTP Server
+* [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
+* [Get Amazon Access Key](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
+* [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)
+
+4.Additional Setup
+*For Google Drive*: Add Self-Defined Module -> cloud_verification.py
 ```python
 import pandas
 # get package folder
@@ -44,19 +55,9 @@ print(pandas.__file__)
 # copy this module to the package folder
 ```
 
-3.Run API Extractor
-```shell script
-$ python ACNH_API/api_extractor.py
-```
-
-4.Setup Cloud Server/SMTP Server
-* [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
-* [Get Amazon Access Key](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
-* [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)
-
-5.Create .env File
+*For Amazon/SMTP Server*: Create .env File
 ```text
-# SMTP Server Setup
+# SMTP Server Setup 
 MAIL_SERVER=smtp.gmail.com
 MAIL_USE_TLS=True
 MAIL_USE_SST=False
@@ -73,13 +74,16 @@ LocalFolder=data
 AWSBucket=data
 ```
 
-6.Run Uploader based on your needs
+5.Run Uploader based on your needs
+_Upload folder to Google Drive_
 ```shell script
 $ python ACNH_API/google_drive_uploader.py
 ```
+_Sync data to AWS S3_
 ```shell script
 $ python ACNH_API/amzon_s3_cli.py
 ```
+_Send emails with attachment_
 ```shell script
 $ python ACNH_API/emails_distributor.py
 ```
