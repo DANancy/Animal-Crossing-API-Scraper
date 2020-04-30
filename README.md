@@ -4,8 +4,11 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 ### Support Service
 * Google Drive
-* Amzon S3
+* Amazon S3
 * SMTP Server
+
+### ACNH API Scraper Architecture
+![Image of Diagram](images/API_Scraper_diagram.png)
 
 
 ### Project Overview
@@ -15,7 +18,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 │   ├── cloud_verification     # self-defined module
 │   ├── api_extractor          # spider for ACNH API
 │   ├── google_drive_uploader  # upload all files to Google Drive automatically
-│   ├── amzaon_s3_uploader     # upload all files to Amazon S3 automatically
+│   ├── amazon_s3_cli          # upload all files to Amazon S3 automatically using CLI tool 
 │   ├── emails_distributor     # zip all files and distribute emails automatically
 │   └── api_sample.json        # animal crossing api call sample
 ├── Images
@@ -55,7 +58,7 @@ $ python ACNH_API/api_extractor.py
 $ python ACNH_API/google_drive_uploader.py
 ```
 ```shell script
-$ python ACNH_API/amzon_s3_uploader.py
+$ python ACNH_API/amzon_s3_cli.py
 ```
 ```shell script
 $ python ACNH_API/emails_distributor.py
@@ -65,7 +68,10 @@ $ python ACNH_API/emails_distributor.py
 ### References
 * [PyDrive](https://gsuitedevs.github.io/PyDrive/docs/build/html/index.html)
 * [Flask-Mail](https://pythonhosted.org/Flask-Mail/)
-
+* [subprocess](https://docs.python.org/3/library/subprocess.html)
+* [AWS Sync](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)
+* [awscil](https://pypi.org/project/awscli/)
+* [WatchDog](https://python-watchdog.readthedocs.io/en/v0.10.2/)
 
 ### Credits
 * [Mutoo](https://github.com/mutoo) - Wash dishes and take care of baby while I am programming :D
