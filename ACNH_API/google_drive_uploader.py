@@ -12,14 +12,14 @@ import cloud_verification as cv
 drive = cv.google_verify()
 
 
-# def get_files(folder_path):
+# def get_files(local_folder):
 #     # create a list of file and sub directories
 #     # names in the given directory
-#     file_lst = os.listdir(folder_path)
+#     file_lst = os.listdir(local_folder)
 #     all_files = []
 #     for entry in file_lst:
 #         # Create full path
-#         full_path = os.path.join(folder_path, entry)
+#         full_path = os.path.join(local_folder, entry)
 #         # If entry is a directory then get the list of files in this directory
 #         if os.path.isdir(full_path):
 #             all_files = all_files + get_files(full_path)
@@ -29,17 +29,17 @@ drive = cv.google_verify()
 #     return all_files
 
 
-def upload_files(input_folder):
+def upload_files(local_folder):
     # create root folder on Google Drive
-    parent_folder = drive.CreateFile({'title': input_folder, 'mimeType': 'application/vnd.google-apps.folder'})
+    parent_folder = drive.CreateFile({'title': local_folder, 'mimeType': 'application/vnd.google-apps.folder'})
     parent_folder.Upload()
-    print("{} folder has been created on Google Drive".format(input_folder))
+    print("{} folder has been created on Google Drive".format(local_folder))
 
     # create folder info to store folder ID
     folders_info = {}
-    folders_info[input_folder] = parent_folder['id']
+    folders_info[local_folder] = parent_folder['id']
 
-    for root, dirs, files in os.walk(input_folder):
+    for root, dirs, files in os.walk(local_folder):
         parent_folder = root.split('\\')[-1]
         parent_id = ""
         if parent_folder in folders_info.keys():

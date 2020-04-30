@@ -3,7 +3,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 
 ### Support Service
-* Google Drive (Completed)
+* Google Drive
 * Amzon S3
 * SMTP Server
 
@@ -15,6 +15,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 │   ├── cloud_verification     # self-defined module
 │   ├── api_extractor          # spider for ACNH API
 │   ├── google_drive_uploader  # upload all files to Google Drive automatically
+│   ├── amzaon_s3_uploader     # upload all files to Amazon S3 automatically
 │   ├── emails_distributor     # zip all files and distribute emails automatically
 │   └── api_sample.json        # animal crossing api call sample
 ├── Images
@@ -26,12 +27,12 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 
 ### Setup
-1. Clone the whole project
+1.Clone the whole project
 ```shell script
 $ git clone https://github.com/DANancy/API-Scraper-Starter.git
 ```
 
-2. Add Self-Defined Module -> cloud_verification.py
+2.Add Self-Defined Module -> cloud_verification.py
 ```python
 import pandas
 # get package folder
@@ -39,9 +40,9 @@ print(pandas.__file__)
 # copy this module to the package folder
 ```
 
-3. Setup Cloud Server/SMTP Server
+3.Setup Cloud Server/SMTP Server
 * [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
-* Amzon S3
+* [Get Amazon Access Key](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
 * [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)
 
 4.Run API Extractor
@@ -49,15 +50,22 @@ print(pandas.__file__)
 $ python ACNH_API/api_extractor.py
 ```
 
-5.Run Uploader
+5.Run Uploader based on your needs
 ```shell script
 $ python ACNH_API/google_drive_uploader.py
+```
+```shell script
+$ python ACNH_API/amzon_s3_uploader.py
+```
+```shell script
+$ python ACNH_API/emails_distributor.py
 ```
 
 
 ### References
 * [PyDrive](https://gsuitedevs.github.io/PyDrive/docs/build/html/index.html)
 * [Flask-Mail](https://pythonhosted.org/Flask-Mail/)
+
 
 ### Credits
 * [Mutoo](https://github.com/mutoo) - Wash dishes and take care of baby while I am programming :D

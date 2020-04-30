@@ -133,8 +133,11 @@ dmypy.json
 
 # test
 ACNH_API/data
+ACNH_API/data.zip
 
 # Google Grive API
 ACNH_API/client_secrets.json
 ACNH_API/mycreds.txt
 
+# Amzon key
+rootkey.csv
