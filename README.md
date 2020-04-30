@@ -21,7 +21,8 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 │   ├── amazon_s3_cli          # upload all files to Amazon S3 automatically using CLI tool 
 │   ├── emails_distributor     # zip all files and distribute emails automatically
 │   └── api_sample.json        # animal crossing api call sample
-├── Images
+├── images                     # images for diagram 
+├── .env-sample                # Rename to .env to setup environmental variables             
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt
@@ -35,7 +36,7 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 $ git clone https://github.com/DANancy/API-Scraper-Starter.git
 ```
 
-2.Add Self-Defined Module -> cloud_verification.py
+2.Add Self-Defined Module -> cloud_verification.py (only for Google)
 ```python
 import pandas
 # get package folder
@@ -43,7 +44,26 @@ print(pandas.__file__)
 # copy this module to the package folder
 ```
 
-3.Setup Cloud Server/SMTP Server
+3.Create .env File
+```text
+# SMTP Server Setup
+MAIL_SERVER=smtp.gmail.com
+MAIL_USE_TLS=True
+MAIL_USE_SST=False
+MAIL_PORT=587
+MAIL_USERNAME=example@gmail.com
+MAIL_PASSWORD=*****
+RECIPIENTS=["example@gmail.com","example1@gmail.com","example2@gmail.com"]
+
+# AWS Setup
+AWS_ACCESS_KEY_ID=*****
+AWS_SECRET_ACCESS_KEY=*****
+AWS_DEFAULT_REGION=ap-southeast-2
+LocalFolder=data
+AWSBucket=data
+```
+
+4.Setup Cloud Server/SMTP Server
 * [Setup Google Drive API](https://medium.com/@annissouames99/how-to-upload-files-automatically-to-drive-with-python-ee19bb13dda)
 * [Get Amazon Access Key](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
 * [Setup SMTP Server](https://www.siteground.com/kb/google_free_smtp_server/)

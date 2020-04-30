@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # import libs
-import glob
 import os
 
 # import customized module
@@ -10,7 +9,6 @@ import cloud_verification as cv
 
 # add Google Drive
 drive = cv.google_verify()
-
 
 # def get_files(local_folder):
 #     # create a list of file and sub directories

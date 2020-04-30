@@ -50,7 +50,7 @@ def distributor(local_folder):
                      body = "This is awesome",
                      html=""" <img src="https://github.com/DANancy/Animal-Crossing-API-Scraper/blob/master/images/animal-crossing.jpg" width="800" height="600" />""",
                      sender=app.config.get("MAIL_USERNAME"),
-                     recipients=json.loads(os.getenv("Recipients")))
+                     recipients=json.loads(os.getenv("RECIPIENTS")))
 
         # add attachment to the email
         with app.open_resource(local_folder) as fp:
