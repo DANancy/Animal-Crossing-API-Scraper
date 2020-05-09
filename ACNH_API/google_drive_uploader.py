@@ -10,23 +10,6 @@ import cloud_verification as cv
 # add Google Drive
 drive = cv.google_verify()
 
-# def get_files(local_folder):
-#     # create a list of file and sub directories
-#     # names in the given directory
-#     file_lst = os.listdir(local_folder)
-#     all_files = []
-#     for entry in file_lst:
-#         # Create full path
-#         full_path = os.path.join(local_folder, entry)
-#         # If entry is a directory then get the list of files in this directory
-#         if os.path.isdir(full_path):
-#             all_files = all_files + get_files(full_path)
-#         else:
-#             all_files.append(full_path)
-#
-#     return all_files
-
-
 def upload_files(local_folder):
     # create root folder on Google Drive
     parent_folder = drive.CreateFile({'title': local_folder, 'mimeType': 'application/vnd.google-apps.folder'})

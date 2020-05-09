@@ -3,9 +3,9 @@ This project is built to extract jsons and images for fish & bugs from animal cr
 
 
 ### Support Service
-* Google Drive
-* Amazon S3
-* SMTP Server
+* **_Google Drive_**: Allow you to copy a entire folder to the Google Drive automatically
+* **_Amazon S3_**: Allow you to watch the entire folder and sync automatically to AWS S3
+* **_SMTP Server_**: Allow you to send emails with attachment to groups of recipients automatically
 
 
 ### ACNH API Scraper Architecture
